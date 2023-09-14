@@ -3,7 +3,9 @@
 
 // Primary
 $soft-red: hsl(7, 99%, 70%);
+$soft-red-transparent: hsl(7, 99%, 70%, 0.225);
 $yellow: hsl(51, 100%, 49%);
+$yellow-transparent: hsla(51, 100%, 49%, 0.225);
 $dark-desaturated-cyan: hsl(167, 40%, 24%);    // (graphic design text)
 $dark-blue: hsl(198, 62%, 26%);                // (photography text)
 $dark-moderate-cyan: hsl(168, 34%, 41%);       // (footer)
@@ -16,5 +18,7 @@ $grayish-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 
 
-// Logo
+$off-white: #fffbf8;
+
+// Logo (header)
 $logo-margin: 0 10vw;

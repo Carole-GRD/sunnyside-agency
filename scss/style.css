@@ -317,11 +317,36 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
 }
 body h1 {
+  font-family: "Fraunces", serif;
+}
+body h2 {
+  font-family: "Fraunces", serif;
+  text-align: center;
+  font-size: 8vmin;
+  font-weight: 800;
+  max-width: 80%;
+  color: hsl(212, 27%, 19%);
+}
+body p {
+  text-align: center;
+  padding: 5vmin 0;
+  color: hsl(232, 10%, 55%);
+  font-size: clamp(1.1rem, 4vmin, 1.7rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+body button.learn-more {
   font-family: "Fraunces", serif;
 }
 
@@ -353,15 +378,67 @@ header div nav {
   display: none;
 }
 header h1 {
-  font-family: "Fraunces", serif;
   text-transform: uppercase;
+  text-align: center;
   color: hsl(0, 0%, 100%);
-  font-size: 8vmin;
+  font-size: 10vmin;
   font-weight: 800;
   letter-spacing: 1.5vmin;
-  text-align: center;
   align-self: center;
 }
 header img {
   justify-self: center;
+}
+
+main > img {
+  width: 100vw;
+}
+
+section {
+  padding: 15vmin 8vmin;
+  background-color: #fffbf8;
+}
+
+#section-transform,
+#section-stand-out {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+#section-transform h2,
+#section-stand-out h2 {
+  justify-self: center;
+}
+#section-transform p,
+#section-stand-out p {
+  align-self: center;
+}
+
+.btn-group {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.btn-group button.learn-more {
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  font-weight: 700;
+  font-size: clamp(0.8rem, 4vmin, 1.5rem);
+  letter-spacing: 0.2vmin;
+  background-color: #fffbf8;
+  color: hsl(212, 27%, 19%);
+  border: none;
+}
+.btn-group .line-under-button.btn-stand-out, .btn-group .line-under-button.btn-transform {
+  position: absolute;
+  transform: translate(-0.5ch, -0.7ch);
+  justify-self: center;
+  height: 1ch;
+  width: 110%;
+  border-radius: 50px;
+}
+.btn-group .line-under-button.btn-transform {
+  background-color: hsla(51, 100%, 49%, 0.225);
+}
+.btn-group .line-under-button.btn-stand-out {
+  background-color: hsla(7, 99%, 70%, 0.225);
 }/*# sourceMappingURL=style.css.map */

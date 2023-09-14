@@ -1,0 +1,31 @@
+
+
+main > img {
+    width: 100vw;
+}
+// #image-transform,
+// #image-stand-out {
+//     width: 100vw;
+// }
+
+
+
+section {
+    padding: 15vmin 8vmin;
+    background-color: $off-white;
+}
+
+
+#section-transform,
+#section-stand-out {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    h2 {
+        justify-self: center;
+    }
+    p {
+        align-self: center;
+    }
+
+}
+

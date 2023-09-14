@@ -1,0 +1,39 @@
+
+.btn-group {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    button.learn-more {
+        text-transform: uppercase;
+        color: $very-dark-desaturated-blue;
+        font-weight: 700;
+        font-size: clamp(.8rem, 4vmin, 1.5rem);
+        letter-spacing: .2vmin;
+        background-color: $off-white;
+        color:$very-dark-desaturated-blue ;
+        border: none;
+    }
+
+    %line {
+        position: absolute;
+        transform: translate(-0.5ch, -0.7ch);
+        justify-self: center;
+        height: 1ch;
+        width: clamp(80%, 110%, 120%);
+        border-radius: 50px;
+    }
+    .line-under-button.btn-transform {
+        @extend %line;
+        background-color: $yellow-transparent;
+    }
+    .line-under-button.btn-stand-out {
+        @extend %line;
+        background-color: $soft-red-transparent;
+    }
+}
+
+
+
+
+
