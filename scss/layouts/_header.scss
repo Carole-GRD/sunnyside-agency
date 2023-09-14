@@ -1,0 +1,53 @@
+
+header {
+    background-image: url('../../image/photos/image-header.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: grid;
+    grid-template-rows: 1fr 2fr 4fr;
+
+    min-height: 70vmax;
+    
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+            align-self: center;
+        }
+        img:nth-child(1) {
+            justify-self: flex-start;
+            margin: $logo-margin;
+        }
+        img:nth-child(2) {
+            justify-self: flex-end;
+            margin: $logo-margin;
+        }
+
+
+        nav {
+            display: none;
+        }
+
+    }
+
+    
+    h1 {
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: $white;
+        // font-size: calc(20px + 5vw);
+        // font-size : clamp(1rem, 10vw, 5rem);
+        font-size: 8vmin;
+        font-weight: 800;
+        letter-spacing: 1.5vmin;
+        text-align: center;
+        align-self: center;
+    }
+
+    img {
+        justify-self: center;
+    }
+}
