@@ -495,7 +495,8 @@ footer #icons-socialnetworks img {
   cursor: pointer;
 }
 
-#section-about > img {
+#image-transform,
+#image-stand-out {
   width: 100vw;
 }
 
@@ -596,6 +597,103 @@ section {
   max-width: 50vw;
 }
 
+@media only screen and (min-width: 1400px) {
+  #section-about {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: repeat(3, 600px);
+    grid-template-areas: "section-transform img-transform" "img-stand-out section-stand-out" "section-graphic-design section-photography";
+  }
+  #section-about #image-transform {
+    grid-area: img-transform;
+    width: 50vw;
+  }
+  #section-about #section-transform {
+    grid-area: section-transform;
+    height: 600px;
+    padding: 12vmin 12vmin;
+  }
+  #section-about #section-transform h2 {
+    font-size: 3vw;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    justify-self: left;
+  }
+  #section-about #section-transform p {
+    align-self: center;
+    text-align: left;
+  }
+  #section-about #image-stand-out {
+    grid-area: img-stand-out;
+    width: 50vw;
+  }
+  #section-about #section-stand-out {
+    grid-area: section-stand-out;
+    height: 600px;
+    padding: 12vmin 12vmin;
+  }
+  #section-about #section-stand-out h2 {
+    font-size: 3vw;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    justify-self: left;
+  }
+  #section-about #section-stand-out p {
+    align-self: center;
+    text-align: left;
+  }
+  #section-about #section-graphic-design {
+    grid-area: section-graphic-design;
+    padding-top: 47vh;
+  }
+  #section-about #section-graphic-design h2 {
+    font-size: 2rem;
+  }
+  #section-about #section-graphic-design p {
+    font-size: 1.1rem;
+    max-width: 25vw;
+    margin: 0 auto;
+  }
+  #section-about #section-photography {
+    grid-area: section-photography;
+    padding-top: 47vh;
+  }
+  #section-about #section-photography h2 {
+    font-size: 2rem;
+  }
+  #section-about #section-photography p {
+    font-size: 1.1rem;
+    max-width: 25vw;
+    margin: 0 auto;
+  }
+  #section-client-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  #section-client-testimonials h2 {
+    font-size: 3vmin;
+  }
+  #section-client-testimonials #people-group {
+    display: flex;
+    max-height: 57vh;
+    max-width: 77vw;
+    margin: 0 auto;
+  }
+  #section-client-testimonials .people {
+    max-height: 57vh;
+  }
+  #section-client-testimonials .people img {
+    max-width: 10vmin;
+  }
+  #section-client-testimonials .people p {
+    font-size: 1.1rem;
+    margin: 1vw;
+  }
+}
 .btn-group {
   position: relative;
   justify-self: center;
@@ -624,4 +722,10 @@ section {
 }
 .btn-group .line-under-button.btn-stand-out {
   background-color: hsla(7, 99%, 70%, 0.225);
+}
+
+@media only screen and (min-width: 1400px) {
+  .btn-group {
+    justify-self: left;
+  }
 }/*# sourceMappingURL=style.css.map */
