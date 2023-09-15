@@ -391,7 +391,45 @@ header img {
   justify-self: center;
 }
 
-main > div > img {
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15vmin 0;
+  background-color: hsl(168, 44%, 70%);
+}
+footer > svg {
+  color: hsl(166, 44%, 32%);
+  scale: 1.5;
+}
+footer nav {
+  padding: 12vmin clamp(3vw, 5vmin, 10vw) 20vmin;
+  min-width: 85vw;
+}
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer nav li {
+  color: hsl(166, 44%, 32%);
+  list-style-type: none;
+  cursor: pointer;
+}
+footer nav a {
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+footer #icons-socialnetworks {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40%;
+  max-width: 50%;
+}
+footer #icons-socialnetworks img {
+  width: clamp(1.2rem, 4vw, 3rem);
+  cursor: pointer;
+}
+
+#section-about > img {
   width: 100vw;
 }
 
@@ -445,6 +483,9 @@ section {
   color: hsl(198, 62%, 26%);
 }
 
+#section-client-testimonials {
+  padding-bottom: 15vmin;
+}
 #section-client-testimonials h2 {
   color: hsl(210, 4%, 67%);
   text-transform: uppercase;
@@ -478,6 +519,15 @@ section {
 }
 #section-client-testimonials .people div > p:last-child {
   color: hsl(210, 4%, 67%);
+}
+
+#section-gallery div {
+  display: flex;
+}
+#section-gallery div img {
+  border-collapse: collapse;
+  margin: 0;
+  max-width: 50vw;
 }
 
 .btn-group {

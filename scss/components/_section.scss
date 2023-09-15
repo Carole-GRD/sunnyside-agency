@@ -1,21 +1,12 @@
-// @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
 
-
-main > div > img {
+#section-about > img {
     width: 100vw;
 }
-// #image-transform,
-// #image-stand-out {
-//     width: 100vw;
-// }
-
-
 
 section {
     padding: 12vmin 8vmin 6vmin;
     background-color: $off-white;
 }
-
 
 #section-transform,
 #section-stand-out {
@@ -49,6 +40,7 @@ section {
         color: $dark-desaturated-cyan;
     }
 }
+
 #section-photography {
     background-image: url('../../image/photos/image-photography.jpg');
     @extend %section-bg-img;
@@ -62,8 +54,8 @@ section {
     }
 }
 
-
 #section-client-testimonials {
+    padding-bottom: 15vmin;
 
     h2 {
         color: $grayish-blue;
@@ -107,6 +99,19 @@ section {
 
         div > p:last-child {
             color: $grayish-blue;
+        }
+    }
+}
+
+#section-gallery {
+    
+    div  {
+        display: flex;
+        
+        img {
+            border-collapse: collapse;
+            margin: 0;
+            max-width: 50vw;
         }
     }
 }
