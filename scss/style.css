@@ -333,6 +333,7 @@ body h1 {
 body h2 {
   font-family: "Fraunces", serif;
   text-align: center;
+  margin: 0 auto;
   font-size: 8vmin;
   font-weight: 800;
   max-width: 80%;
@@ -340,7 +341,7 @@ body h2 {
 }
 body p {
   text-align: center;
-  padding: 5vmin 0;
+  padding: 3vmin 0 0;
   color: hsl(232, 10%, 55%);
   font-size: clamp(1.1rem, 4vmin, 1.7rem);
   font-weight: 600;
@@ -390,12 +391,12 @@ header img {
   justify-self: center;
 }
 
-main > img {
+main > div > img {
   width: 100vw;
 }
 
 section {
-  padding: 15vmin 8vmin;
+  padding: 12vmin 8vmin 6vmin;
   background-color: #fffbf8;
 }
 
@@ -411,6 +412,72 @@ section {
 #section-transform p,
 #section-stand-out p {
   align-self: center;
+}
+
+#section-photography, #section-graphic-design {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+}
+
+#section-graphic-design {
+  background-image: url("../../image/photos/image-graphic-design.jpg");
+  padding-top: 50vh;
+  padding-bottom: 7vh;
+}
+#section-graphic-design h2 {
+  color: hsl(167, 40%, 24%);
+}
+#section-graphic-design p {
+  color: hsl(167, 40%, 24%);
+}
+
+#section-photography {
+  background-image: url("../../image/photos/image-photography.jpg");
+  padding-top: 50vh;
+  padding-bottom: 7vh;
+}
+#section-photography h2 {
+  color: hsl(198, 62%, 26%);
+}
+#section-photography p {
+  color: hsl(198, 62%, 26%);
+}
+
+#section-client-testimonials h2 {
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  width: 100%;
+  font-size: clamp(0.8rem, 3.5vmin, 3rem);
+  letter-spacing: 1vmin;
+  padding-bottom: 2vmax;
+}
+#section-client-testimonials .people {
+  display: flex;
+  flex-direction: column;
+  padding: 5vmax 0 8vmin;
+}
+#section-client-testimonials .people img {
+  align-self: center;
+  max-width: 20vmin;
+  border-radius: 50%;
+}
+#section-client-testimonials .people > p {
+  padding: 8vmin 0;
+  color: hsl(213, 9%, 39%);
+}
+#section-client-testimonials .people div > p {
+  margin: 0;
+  padding: 0;
+}
+#section-client-testimonials .people div > p:first-child {
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", serif;
+  padding-bottom: 1vmin;
+}
+#section-client-testimonials .people div > p:last-child {
+  color: hsl(210, 4%, 67%);
 }
 
 .btn-group {

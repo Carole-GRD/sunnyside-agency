@@ -1,6 +1,7 @@
+// @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
 
 
-main > img {
+main > div > img {
     width: 100vw;
 }
 // #image-transform,
@@ -11,7 +12,7 @@ main > img {
 
 
 section {
-    padding: 15vmin 8vmin;
+    padding: 12vmin 8vmin 6vmin;
     background-color: $off-white;
 }
 
@@ -26,6 +27,86 @@ section {
     p {
         align-self: center;
     }
-
 }
 
+%section-bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    // max-height: 70vmin;
+}
+
+#section-graphic-design {
+    background-image: url('../../image/photos/image-graphic-design.jpg');
+    @extend %section-bg-img;
+    padding-top: 50vh;
+    padding-bottom: 7vh;
+    h2 {
+        color: $dark-desaturated-cyan;
+    }
+    p {
+        color: $dark-desaturated-cyan;
+    }
+}
+#section-photography {
+    background-image: url('../../image/photos/image-photography.jpg');
+    @extend %section-bg-img;
+    padding-top: 50vh;
+    padding-bottom: 7vh;
+    h2 {
+        color: $dark-blue;
+    }
+    p {
+        color: $dark-blue;
+    }
+}
+
+
+#section-client-testimonials {
+
+    h2 {
+        color: $grayish-blue;
+        text-transform: uppercase;
+        width: 100%;
+        // font-size: .9rem;
+        // font-size: 4vmin;
+        font-size: clamp(.8rem, 3.5vmin, 3rem);
+        letter-spacing: 1vmin;
+        padding-bottom: 2vmax;
+    }
+
+    .people {
+        display: flex;
+        flex-direction: column;
+        padding: 5vmax 0 8vmin;
+
+
+        img {
+            align-self: center;
+            // min-height: 15vmin;   
+            max-width: 20vmin;   
+            border-radius: 50%;
+        }
+
+        & > p {
+            padding: 8vmin 0;
+            color: $very-dark-grayish-blue;
+        }
+
+        div > p {
+            margin: 0;
+            padding: 0;
+        }
+
+        div > p:first-child {
+            color: $very-dark-desaturated-blue;
+            font-family: 'Fraunces', serif;
+            padding-bottom: 1vmin;
+        }
+
+        div > p:last-child {
+            color: $grayish-blue;
+        }
+    }
+}
