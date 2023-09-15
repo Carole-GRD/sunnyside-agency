@@ -233,4 +233,14 @@ section {
 
     }
 
+    #section-gallery {
+        display: flex;
+    
+        div  {
+            img {
+                max-width: 25vw;
+            }
+        }
+    }
+
 }

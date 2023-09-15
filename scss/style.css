@@ -693,6 +693,12 @@ section {
     font-size: 1.1rem;
     margin: 1vw;
   }
+  #section-gallery {
+    display: flex;
+  }
+  #section-gallery div img {
+    max-width: 25vw;
+  }
 }
 .btn-group {
   position: relative;
