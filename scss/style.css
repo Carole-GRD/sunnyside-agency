@@ -391,6 +391,72 @@ header img {
   justify-self: center;
 }
 
+@media only screen and (min-width: 1400px) {
+  header {
+    height: 800px;
+    min-width: 1400px;
+    max-width: 100vw;
+    grid-template-rows: 2fr 7fr 10fr;
+  }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+  }
+  header div img:nth-child(1) {
+    scale: 2;
+  }
+  header div img:nth-child(2) {
+    display: none;
+  }
+  header div nav {
+    display: block;
+  }
+  header div nav ul {
+    display: flex;
+  }
+  header div nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 3vmin;
+  }
+  header div nav a {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.125rem;
+  }
+  header div nav li:last-of-type {
+    background-color: hsl(0, 0%, 100%);
+    width: 8.75rem;
+    height: 3.5rem;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
+  }
+  header div nav li:last-of-type:hover {
+    background-color: rgba(255, 255, 255, 0.4431372549);
+    transition: background-color 0.2s ease;
+  }
+  header div nav li:last-of-type a {
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    font-size: 1rem;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  header div nav li:last-of-type:hover a {
+    color: hsl(0, 0%, 100%);
+    transition: color 0.2s ease;
+  }
+  header h1 {
+    font-size: 8vmin;
+  }
+  header img {
+    scale: 1.2;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
