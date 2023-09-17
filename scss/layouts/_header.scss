@@ -1,6 +1,6 @@
 
 header {
-    background-image: url('../../image/photos/image-header.jpg');
+    background-image: url('/image/photos/image-header.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,15 +17,8 @@ header {
         img {
             align-self: center;
         }
-        // img:nth-child(1) {
-        //     justify-self: flex-start;
-        //     margin: $logo-margin;
-        // }
-        // img:nth-child(2) {
-        //     justify-self: flex-end;
-        //     margin: $logo-margin;
-        // }
-        img {
+
+        & > img {
             justify-self: flex-start;
             margin: $logo-margin;
         }
@@ -60,9 +53,9 @@ header {
                 right: 10vmin;
                 width: 0;
                 height: 0;
-                border-left: 50px solid transparent; 
-                border-top: 50px solid transparent;
-                border-right: 50px solid $white;
+                border-left: 15vmin solid transparent; 
+                border-top: 15vmin solid transparent;
+                border-right: 15vmin solid $white;
                 transition: right 0.5s ease;
             }
 
