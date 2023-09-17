@@ -352,7 +352,7 @@ body button.learn-more {
 }
 
 header {
-  background-image: url("/image/photos/image-header.jpg");
+  background-image: url("../image/photos/image-header.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
