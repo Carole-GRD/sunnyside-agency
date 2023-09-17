@@ -465,7 +465,7 @@ footer {
   background-color: hsl(168, 44%, 70%);
 }
 footer > svg {
-  color: hsl(166, 44%, 32%);
+  color: #2e7665;
   scale: 1.5;
 }
 footer nav {
@@ -477,7 +477,7 @@ footer nav ul {
   justify-content: space-between;
 }
 footer nav li {
-  color: hsl(166, 44%, 32%);
+  color: #2e7665;
   list-style-type: none;
   cursor: pointer;
 }
@@ -495,6 +495,36 @@ footer #icons-socialnetworks img {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1400px) {
+  footer {
+    max-height: 50vh;
+    padding: 10vmin 0;
+  }
+  footer > svg {
+    scale: 1.3;
+  }
+  footer nav {
+    padding: 6vmin clamp(3vw, 5vmin, 10vw) 10vmin;
+    min-width: 35vw;
+  }
+  footer nav a {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+  footer nav li:hover a {
+    color: hsl(0, 0%, 100%);
+  }
+  footer #icons-socialnetworks {
+    min-width: 20%;
+    max-width: 30%;
+  }
+  footer #icons-socialnetworks svg {
+    scale: 2;
+    color: #2C7566;
+  }
+  footer #icons-socialnetworks svg:hover {
+    color: hsl(0, 0%, 100%);
+  }
+}
 #image-transform,
 #image-stand-out {
   width: 100vw;
