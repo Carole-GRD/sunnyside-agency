@@ -33,6 +33,10 @@ footer {
         a {
             font-size: clamp(1rem, 5vw, 2rem);
         }
+
+        li:hover a {
+            color: $white;
+        }
     }
 
     #icons-socialnetworks {
@@ -41,9 +45,13 @@ footer {
         min-width: 40%;
         max-width: 50%;
 
-        img {
-            width: clamp(1.2rem, 4vw, 3rem);
+        svg {
+            color: #2C7566;
             cursor: pointer;
+        }
+
+        svg:hover {
+            color: $white;
         }
     }
 }
@@ -61,19 +69,7 @@ footer {
         
         nav {
             padding: 6vmin clamp(3vw, 5vmin, 10vw) 10vmin;
-    
             min-width: 35vw;
-    
-            // ul {
-            //     display: flex;
-            //     justify-content: space-between;
-            // }
-    
-            // li {
-            //     color: $cyan;
-            //     list-style-type: none;
-            //     cursor: pointer;
-            // }
     
             a {
                 font-size: clamp(1rem, 2vw, 2rem);

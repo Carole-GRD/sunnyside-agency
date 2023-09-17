@@ -402,7 +402,8 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 94%;
+    margin: 0 auto;
+    width: 96%;
   }
   header div img:nth-child(1) {
     scale: 2;
@@ -420,8 +421,11 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 8.75rem;
+    height: 3.5rem;
     list-style-type: none;
-    margin: 0 3vmin;
+    margin: 0 1vmin;
+    cursor: pointer;
   }
   header div nav a {
     color: hsl(0, 0%, 100%);
@@ -434,8 +438,11 @@ header img {
     border-radius: 30px;
     transition: background-color 0.2s ease;
   }
-  header div nav li:last-of-type:hover {
+  header div nav li:hover {
     background-color: rgba(255, 255, 255, 0.4431372549);
+    width: 8.75rem;
+    height: 3.5rem;
+    border-radius: 30px;
     transition: background-color 0.2s ease;
   }
   header div nav li:last-of-type a {
@@ -446,7 +453,7 @@ header img {
     font-weight: 600;
     transition: color 0.2s ease;
   }
-  header div nav li:last-of-type:hover a {
+  header div nav li:hover a {
     color: hsl(0, 0%, 100%);
     transition: color 0.2s ease;
   }
@@ -484,15 +491,21 @@ footer nav li {
 footer nav a {
   font-size: clamp(1rem, 5vw, 2rem);
 }
+footer nav li:hover a {
+  color: hsl(0, 0%, 100%);
+}
 footer #icons-socialnetworks {
   display: flex;
   justify-content: space-between;
   min-width: 40%;
   max-width: 50%;
 }
-footer #icons-socialnetworks img {
-  width: clamp(1.2rem, 4vw, 3rem);
+footer #icons-socialnetworks svg {
+  color: #2C7566;
   cursor: pointer;
+}
+footer #icons-socialnetworks svg:hover {
+  color: hsl(0, 0%, 100%);
 }
 
 @media only screen and (min-width: 1400px) {
