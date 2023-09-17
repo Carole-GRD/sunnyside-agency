@@ -367,16 +367,84 @@ header div {
 header div img {
   align-self: center;
 }
-header div img:nth-child(1) {
+header div img {
   justify-self: flex-start;
   margin: 0 10vw;
 }
-header div img:nth-child(2) {
+header div a {
+  justify-self: flex-end;
+  align-self: center;
+}
+header div a img {
   justify-self: flex-end;
   margin: 0 10vw;
 }
 header div nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 80vmin;
+  position: fixed;
+  z-index: 1;
+  top: 30vmin;
+  right: 10vmin;
+  background-color: hsl(0, 0%, 100%);
+  transition: right 0.5s ease;
+}
+header div nav .triangle {
+  position: fixed;
+  z-index: 1;
+  top: 20vmin;
+  right: 10vmin;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-right: 50px solid hsl(0, 0%, 100%);
+  transition: right 0.5s ease;
+}
+header div nav ul {
+  align-self: center;
+}
+header div nav ul li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 6vmin 0;
+  width: 8.75rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+header div nav ul li a {
+  color: hsl(213, 9%, 39%);
+  text-decoration: none;
+  font-size: 6vmin;
+}
+header div nav li:hover {
+  width: 8.75rem;
+  height: 3.5rem;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 30px;
+}
+header div nav li:last-of-type {
+  width: 8.75rem;
+  height: 3.5rem;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 30px;
+}
+header div nav li:last-of-type a {
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 4vmin;
+  font-weight: 600;
+}
+header div nav.inactive {
+  right: -80vmin;
+  transition: right 0.5s ease;
+}
+header div nav.inactive .triangle {
+  right: -80vmin;
 }
 header h1 {
   text-transform: uppercase;
@@ -405,10 +473,10 @@ header img {
     margin: 0 auto;
     width: 96%;
   }
-  header div img:nth-child(1) {
+  header div img {
     scale: 2;
   }
-  header div img:nth-child(2) {
+  header div a img {
     display: none;
   }
   header div nav {
@@ -430,6 +498,7 @@ header img {
   header div nav a {
     color: hsl(0, 0%, 100%);
     font-size: 1.125rem;
+    text-decoration: none;
   }
   header div nav li:last-of-type {
     background-color: hsl(0, 0%, 100%);
